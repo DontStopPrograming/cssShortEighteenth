@@ -6,7 +6,7 @@
 
 .container {
     width: 100%;
-    
+    color: transparent;
     text-align: center;
     text-transform: uppercase;
     font-size: 200px;
@@ -17,5 +17,58 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: letra 4s;
+}
 
+@keyframes letra {
+    10% {
+        background-image: url('str.jpg');
+    }
+    50% {
+        background-image: url('h.jpg');
+    }
+    100% {
+        background-image: url('how.jpg');
+    }
+}
+
+body {
+    animation: ani 10s;
+    transition: 7s ease-in-out;
+}
+
+@keyframes ani {
+    1% {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('wao.jpg');
+        background-position: center;
+        
+    }
+    50% {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('shung.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    70% {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('sc2.jpg');
+        
+        background-position: center;
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('f.jpg');
+        background-position: center;
+
+    }
+}
+
+.container .h1 {
+    box-shadow: 20px 20px 20px 20px purple;
+    align-items: center;
 }
